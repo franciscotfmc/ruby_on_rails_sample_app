@@ -16,3 +16,7 @@ end
 
 Factory(:user, :email => Factory.next(:email))
 
+Factory.define :micropost do |micropost|
+  micropost.content "Foo bar"
+  micropost.association :user
+end
